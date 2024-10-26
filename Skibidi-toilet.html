@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download File</title>
+</head>
+<body>
+    <h2>Download File</h2>
+    <button onclick="downloadFile()">Download</button>
+
+    <script>
+        function downloadFile() {
+            const fileName = "The.Avengers.2012.1080p.BluRay.x264.YIFY.mp4"; // Specify your file here
+            const link = document.createElement("a");
+            link.href = fileName;
+            link.download = fileName;
+            link.click();
+        }
+    </script>
+</body>
+</html>
